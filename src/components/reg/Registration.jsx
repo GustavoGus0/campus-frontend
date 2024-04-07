@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import "./registration.scss";
-import axios from 'axios';
 
-const Registration = () => {
+const Registration = (props) => {
 
-    const handleClick = (event) => {
-        event.preventDefault();
+    let isLoggedIn = props.isLoggedIn;
+
+    const handleClick = () => {
 
         const newUser = {
             email: {email},
@@ -14,10 +14,8 @@ const Registration = () => {
             third_name: {tName},
             password: {password},
         }
-
-        axios.post('url', {post})
-        .then(response => console.log(response))
-        .catch(err => console.log(err))
+        isLoggedIn = true;
+        console.log(newUser);
     }
 
     const [email, setEmail] = useState("");
@@ -49,7 +47,7 @@ const Registration = () => {
 
     return(
         <>
-            <div className="box">
+            <div className="reg-box">
                 <div className="reg-window">
 
                     <h2>Добро пожаловать!</h2>
