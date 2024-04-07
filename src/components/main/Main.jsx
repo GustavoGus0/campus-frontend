@@ -71,31 +71,31 @@ export default function Main(){
 
     return !isLoggedIn ? (
         <>
-                        <div className="reg-box">
+            <div className="reg-box">
                 <div className="reg-window">
 
                     <h2>Добро пожаловать!</h2>
 
                     <div className="email-content">
-                        <label htmlFor="email">Электронная почта</label>
+                        <label htmlFor="email">Электронная почта:</label>
                         <input id='email' value={email} onChange={handleEmailInput}
                         type='text' placeholder='Ваша эл. почта'
                         />
                     </div>
                     <div className="f-name-content">
-                        <label htmlFor="f-name">Имя</label>
+                        <label htmlFor="f-name">Имя:</label>
                         <input id='f-name' onChange={handlefNameInput} value={first_name}
                         type='text' placeholder='Ваша эл. почта'
                         />
                     </div>
                     <div className="s-name-content">
-                        <label htmlFor="s-name">Фамилия</label>
+                        <label htmlFor="s-name">Фамилия:</label>
                         <input id='s-name' onChange={handlesNameInput} value={second_name}
                         type='text' placeholder='Ваша эл. почта'
                         />
                     </div>
                     <div className="t-name-content">
-                        <label htmlFor="t-name">Отчество</label>
+                        <label htmlFor="t-name">Отчество:</label>
                         <input id='t-name' onChange={handletNameInput} value={third_name}
                         type='text' placeholder='Ваша эл. почта'
                         />
