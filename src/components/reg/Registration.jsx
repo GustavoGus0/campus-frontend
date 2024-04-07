@@ -1,10 +1,50 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./registration.scss";
+import axios from 'axios';
 
 const Registration = () => {
 
-    const handleClick = () => {
-        console.log("click");
+    const handleClick = (event) => {
+        event.preventDefault();
+
+        const newUser = {
+            email: {email},
+            first_name: {fName},
+            second_name: {sName},
+            third_name: {tName},
+            password: {password},
+        }
+
+        axios.post('url', {post})
+        .then(response => console.log(response))
+        .catch(err => console.log(err))
+    }
+
+    const [email, setEmail] = useState("");
+    const [fName, setfName] = useState("");
+    const [sName, setsName] = useState("");
+    const [tName, settName] = useState("");
+    const [password, setPassword] = useState("");
+    const [selectedUnvr, setSelectedUnvr] = useState(null);
+
+    function handleEmailInput(event){
+        setEmail(event.target.value);
+    }
+
+    function handlefNameInput(event){
+        setfName(event.target.value);
+    }
+
+    function handlesNameInput(event){
+        setsName(event.target.value);
+    }
+
+    function handletNameInput(event){
+        settName(event.target.value);
+    }
+
+    function handlePasswordInput(event){
+        setPassword(event.target.value);
     }
 
     return(
@@ -16,15 +56,44 @@ const Registration = () => {
 
                     <div className="email-content">
                         <label htmlFor="email">Электронная почта</label>
-                        <input id='email'
+                        <input id='email' value={email} onChange={handleEmailInput}
                         type='text' placeholder='Ваша эл. почта'
                         />
                     </div>
+                    <div className="f-name-content">
+                        <label htmlFor="f-name">Имя</label>
+                        <input id='f-name' onChange={handlefNameInput} value={fName}
+                        type='text' placeholder='Ваша эл. почта'
+                        />
+                    </div>
+                    <div className="s-name-content">
+                        <label htmlFor="s-name">Фамилия</label>
+                        <input id='s-name' onChange={handlesNameInput} value={sName}
+                        type='text' placeholder='Ваша эл. почта'
+                        />
+                    </div>
+                    <div className="t-name-content">
+                        <label htmlFor="t-name">Отчество</label>
+                        <input id='t-name' onChange={handletNameInput} value={tName}
+                        type='text' placeholder='Ваша эл. почта'
+                        />
+                    </div>
+
                     <div className="password-content">
                         <label htmlFor="password">Пароль</label>
-                        <input id='password'
+                        <input id='password' onChange={handlePasswordInput} value={password}
                         type='password' placeholder='Пароль'
                         />
+                    </div>
+
+                    <div className="select-block">
+                        <select name="University" id="University">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
                     </div>
 
                     <p>Восстановить пароль</p>
