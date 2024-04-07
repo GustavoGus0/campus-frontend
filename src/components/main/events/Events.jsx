@@ -4,8 +4,8 @@ export default function Events(){
 
     return(
         <>
-            <div className="profile-block">
-                <h1>Events</h1>
+            <div className="pad-block">
+                <h1>Мероприятия</h1>
             </div>
         </>
     );

@@ -1,16 +1,147 @@
 /* ------ PROFILE ------ */
-.profile-block {
+.pad-block {
     padding: 2rem;
+    
+    h1 {
+        margin-bottom: 4rem;
+        color: var(--accent-clr2);
+    }
+
+    .box {
+        display: grid;
+        grid-template-areas: "p c"
+                             "m c";
+        gap: 2rem;
+        
+        .profile {
+            background-color: var(--accent-clr);
+            color: var(--accent-clr2);
+            height: 100%;
+            grid-area: p;
+            padding: 2rem;
+            border-radius: 2rem;
+
+            .line-block {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 1rem;
+
+                .edit-icon {
+                    display: flex;
+                    align-items: center;
+                    gap: .5rem;
+                }
+            }
+
+            .info-and-pic {
+                display: flex;
+                gap: 1rem;
+
+                .info {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                }
+            }
+        }
+        
+        .myComps {
+            color: var(--text-clr);
+            background-color: var(--bg-clr);
+            height: 100%;
+            grid-area: c;
+            padding: 2rem;
+            border-radius: 2rem;
+        }
+        
+        .myEvents {
+            color: var(--text-clr);
+            background-color: var(--bg-clr);
+            height: 100%;
+            grid-area: m;
+            padding: 2rem;
+            border-radius: 2rem;
+        }
+    }
 }
 
 /* ------ EVENTS ------ */
 
 
 /* ------ COMPETENCIES ------ */
+.compet-container {
+    min-height: 10rem;
 
+    .line-headings-of-table {
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr;
+        padding: 2rem;
+        background-color: var(--bg-clr);
+        align-items: center;
+        border-radius: 2rem;
+        margin-bottom: 1rem;
+
+        h2 {
+            font-size: clamp(1rem, 3vw + 1rem, 1.75rem);
+            font-weight: normal;
+            color: var(--text-clr);
+        }
+    }
+
+    .grid-item {
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr;
+        padding: 2rem;
+        align-items: center;
+        margin-bottom: 1rem;
+        background-color: var(--bg-clr);
+        border-radius: 2rem;
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        h4 {
+            font-size: 3rem;
+            margin-left: 50%;
+        }
+    }
+}
 
 /* ------ NOTIFICATIONS ------ */
+.new-not {
+    background-color: var(--bg-clr);
+    padding: 2rem;
+    border-radius: 2rem;
+    min-height: 2rem;
+    display: flex;
+    justify-content: space-between;
 
+    p {
+        font-size: 1.5rem;
+        max-width: 90%;
+        color: var(--text-clr);
+        align-items: center;
+        text-justify: middle;
+    }
+
+    .circle {
+        background-color: var(--accent-clr2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+        min-height: 5rem;
+
+        h3 {
+            font-size: 3rem;
+            min-height: 5rem;
+            color: var(--clr-white);
+            font-weight: normal;
+        }
+    }
+}
 
 /* ------ MESSAGES ------ */
 
