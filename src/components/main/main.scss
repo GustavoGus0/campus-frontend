@@ -80,7 +80,7 @@
 
     menu {
         width: 8rem;
-        height: 100svh;
+        min-height: 100svh;
         background-color: var(--accent-clr);
     }
 
@@ -90,7 +90,7 @@
     }
 }
 
-
+/* ------ MENU NAVIGATION BAR ------ */
 .profile-box {
     width: 100%;
     display: flex;
@@ -121,6 +121,10 @@ ul {
         text-decoration: none;
         color: black;
         transition: .2s;
+    }
+
+    .txtdecnone:hover {
+        scale: 1.2;
     }
 
     li {

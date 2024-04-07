@@ -1,5 +1,6 @@
 import '../content.scss';
 import '../../../vars.scss';
+import { motion } from 'framer-motion';
 
 export default function Competencies(){
 
@@ -20,7 +21,7 @@ export default function Competencies(){
                             <h2>Мой уровень</h2>
                         </div>
                     </div>
-                    <div className="grid-item">
+                    <motion.div className="grid-item">
                         <div className="heading">
                             <h3>Анализ информации</h3>
                         </div>
@@ -30,8 +31,8 @@ export default function Competencies(){
                         <div className="level">
                             <h4 id="rating">2</h4>
                         </div>
-                    </div>
-                    <div className="grid-item">
+                    </motion.div>
+                    <motion.div className="grid-item">
                         <div className="heading">
                             <h3>Клиентоориентированность</h3>
                         </div>
@@ -41,8 +42,8 @@ export default function Competencies(){
                         <div className="level">
                             <h4 id="rating">0</h4>
                         </div>
-                    </div>
-                    <div className="grid-item">
+                    </motion.div>
+                    <motion.div className="grid-item">
                         <div className="heading">
                             <h3>Коммуникативность</h3>
                         </div>
@@ -52,8 +53,8 @@ export default function Competencies(){
                         <div className="level">
                             <h4 id="rating">0</h4>
                         </div>
-                    </div>
-                    <div className="grid-item">
+                    </motion.div>
+                    <motion.div className="grid-item">
                         <div className="heading">
                             <h3>Лидерство</h3>
                         </div>
@@ -63,7 +64,7 @@ export default function Competencies(){
                         <div className="level">
                             <h4 id="rating">0</h4>
                         </div>
-                    </div>
+                    </motion.div>
                     
                 </div>
             </div>
