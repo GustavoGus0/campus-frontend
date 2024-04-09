@@ -82,6 +82,10 @@
         border-radius: 2rem;
         margin-bottom: 1rem;
 
+        .myLevel {
+            text-align: center;
+        }
+
         h2 {
             font-size: clamp(1rem, 3vw + 1rem, 1.75rem);
             font-weight: normal;

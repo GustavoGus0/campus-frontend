@@ -12,7 +12,7 @@ import { useState } from "react";
 
 export default function Main(){
 
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const [isLoggedIn, setIsLoggedIn] = useState(true);
     
     const [email, setEmail] = useState("");
     const [first_name, setfName] = useState("");

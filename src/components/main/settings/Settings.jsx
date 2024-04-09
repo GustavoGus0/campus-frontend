@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function Settings(){
 
-    const onHoverEffect = {scale: 1.02, color: 'red'}
+    const onHoverEffect = {scale: 1.02, color: '#ff0000'}
 
     return(
         <>

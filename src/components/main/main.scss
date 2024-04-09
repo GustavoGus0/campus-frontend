@@ -108,6 +108,10 @@
 
 .active {
     scale: 1.2;
+
+    .svgNonFillable {
+        stroke: var(--accent-clr2);
+    }
 }
 
 ul {
@@ -116,6 +120,13 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
+    .svgNonFillable {
+        stroke: var(--text-clr-transp);
+        stroke-width: 2;
+        stroke-linecap: round;
+        fill: none;
+    }
 
     .txtdecnone {
         text-decoration: none;
